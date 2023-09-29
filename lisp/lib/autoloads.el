@@ -144,7 +144,7 @@ hoist buggy forms into autoloads.")
          (version-control 'never)
          case-fold-search    ; reduce magic
          autoload-timestamps ; reduce noise in generated files
-         ;; autoload-compute-prefixes
+         autoload-compute-prefixes
          ;; So `autoload-generate-file-autoloads' knows where to write it
          (target-buffer (current-buffer))
          (module (doom-module-from-path file))
