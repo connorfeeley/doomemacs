@@ -547,8 +547,7 @@ wasn't active when this was called."
 ;;   are never saved to the root of your emacs directory *and* saves us the
 ;;   trouble of setting a million directory/file variables. But it may throw off
 ;;   anyone (or any package) that uses it to search for your Emacs initfiles.
-;; (setq user-emacs-directory doom-profile-cache-dir)
-(setq user-emacs-directory (file-name-directory load-file-name))
+(setq user-emacs-directory doom-profile-cache-dir)
 
 ;; ...However, this may surprise packages (and users) that read
 ;; `user-emacs-directory' expecting to find the location of your Emacs config,
