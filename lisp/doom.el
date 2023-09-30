@@ -251,7 +251,7 @@ For profile-local data files, use `doom-profile-data-dir' instead.")
           (expand-file-name "doomemacs/cache/" (getenv-internal "APPDATA"))
         (expand-file-name "doom/" (or (getenv-internal "XDG_CACHE_HOME") "~/.cache")))
     ;; DEPRECATED: .local will be removed entirely in 3.0
-    (file-name-concat doom-local-dir "cache/"))
+    (expand-file-name "doom/" (or (getenv-internal "XDG_CACHE_HOME") "~/.cache")))
   "Where Doom stores its global cache files.
 
 Cache files represent non-essential data that shouldn't be problematic when
